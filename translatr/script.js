@@ -21,7 +21,6 @@ window.speechSynthesis.onvoiceschanged = function() {
 };
 
 recognition.onresult = event => {
-    let voices = speechSynthesis.getVoices();
     let translate = event.results[0][0].transcript;
     fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170729T221010Z.5c4f9485fbc7dffe.e8f1afc5701d0f8d4ecaaac9412f103d04d83b9c&text=${translate}&lang=en-es`).then(response =>{
       return response.json();
