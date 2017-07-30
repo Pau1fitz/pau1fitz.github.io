@@ -1,5 +1,11 @@
 let voiceSpeak;
-let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+let recognition;
+console.log(window.webkitSpeechRecognition)
+if(window.SpeechRecognition == undefined && window.webkitSpeechRecognition == undefined && window.mozSpeechRecognition == undefined && window.msSpeechRecognition == undefined) {
+  alert('Please try on Google Chrome or any other browser that supports Speech Recognition')
+} else {
+  recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+}
 recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 5;
