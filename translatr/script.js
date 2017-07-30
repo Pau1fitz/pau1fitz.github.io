@@ -31,11 +31,13 @@ recognition.onresult = event => {
       utterance.lang = 'es';
       speechSynthesis.speak(utterance);
       document.querySelector(".response").textContent = response.text[0];
+      document.querySelector(".mouth-top-dot").style.display = "none";
       document.querySelector(".mouth-top").className += " top-speak";
       document.querySelector(".mouth-bottom").className += " bottom-speak";
       utterance.onend = event => {
         document.getElementById("top").className = document.getElementById("top").className.replace(/top-speak/,'');
         document.getElementById("bottom").className =document.getElementById("bottom").className.replace(/bottom-speak/,'');
+        document.querySelector(".mouth-top-dot").style.display = "block";
       }
     });
 
