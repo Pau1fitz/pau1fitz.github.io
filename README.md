@@ -1,4 +1,4 @@
 Translatr
 ---
 
-![Alt text](/photo.jpg?raw=true "Optional Title")
+![Alt text](/photo-t.jpg?raw=true "Optional Title")
