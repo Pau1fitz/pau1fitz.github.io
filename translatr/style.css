@@ -74,6 +74,10 @@ body {
   animation: none;
 }
 
+.pulse:focus {
+  outline:0;
+}
+
 .pulse p {
   font-size: 16px;
   font-family: courier;
