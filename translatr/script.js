@@ -7,6 +7,7 @@ if(window.SpeechRecognition == undefined && window.webkitSpeechRecognition == un
 } else {
   recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 }
+
 recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 5;
@@ -14,7 +15,7 @@ window.speechSynthesis.onvoiceschanged = function() {
     let voices = window.speechSynthesis.getVoices();
     voices.forEach(voice => {
       if(voice.name === 'Monica') {
-        voiceSpeak = voice
+        voiceSpeak = voice;
       }
     })
 };
@@ -40,13 +41,10 @@ recognition.onresult = event => {
         document.querySelector(".mouth-top-dot").style.display = "block";
       }
     });
-
-
 };
-
-
 
 let startRecording = () => {
     recognition.start();
-}
+};
+
 document.querySelector("button").addEventListener('click', startRecording);
