@@ -20,7 +20,6 @@ body {
   border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-
 }
 
 .tri-right.border.btm-left:before {
@@ -297,28 +296,69 @@ body {
     -ms-transform: rotate(5deg);
     transform: rotate(5deg)
 }
-.face .mouth {
-    position: absolute;
-    top: 65%;
-    left: 25%;
+
+.mouth-top {
+  position: absolute;
+    top: 72px;
+    left: 20px;
     width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    background-image: -moz-linear-gradient(-45deg, #d35766, #f26d7d 50%, #d35766 50%, #f26d7d);
-    background-image: -webkit-linear-gradient(-45deg, #d35766, #f26d7d 50%, #d35766 50%, #f26d7d);
-    background-image: -o-linear-gradient(-45deg, #d35766, #f26d7d 50%, #d35766 50%, #f26d7d);
-    background-image: linear-gradient(-45deg, #d35766, #f26d7d 50%, #d35766 50%, #f26d7d);
+    height: 13px;
+    background: #f26d7d;
+    transform: rotate(45deg);
     -webkit-border-radius: 50% 0;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 50% 0;
     -moz-background-clip: padding;
-    border-radius: 50% 0;
-    background-clip: padding-box;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg)
+    border-radius: 50%;
+}
+
+.mouth-bottom {
+    position: absolute;
+    top: 73px;
+    left: 17px;
+    width: 24px;
+    height: 16px;
+    background: #f26d7d;
+    transform: rotate(45deg);
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+}
+
+@keyframes top-animation {
+
+  0%   {top: 72px;    left: 20px;}
+  25%  {top: 70px;    left: 22px; }
+  50%  {top: 72px;    left: 20px;}
+  100% {top: 70px;    left: 22px;}
+
+}
+
+@keyframes bottom-animation {
+  0%   {top: 73px;left: 17px;}
+  25%  {top: 75px;left: 15px;}
+  50%  {top: 73px;left: 17px;}
+  100% {top: 75px;left: 15px;}
+}
+
+.top-speak {
+    animation-name: top-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.bottom-speak {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: bottom-animation;
+}
+
+
+
+.face .mouth {
+    position: absolute;
 }
 .face .mouth:before {
     content: '';
