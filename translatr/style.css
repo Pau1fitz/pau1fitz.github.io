@@ -1,8 +1,8 @@
 body {
-    font-size: 23px;
-    line-height: 1.3;
-    color: #255688;
-    background: #BFEAFF;
+	font-size: 23px;
+	line-height: 1.3;
+	color: #255688;
+	background: #BFEAFF;
 }
 
 .talk-bubble {
@@ -84,6 +84,10 @@ body {
 	user-select: none;
 }
 
+.face-man .mouth-top-dot {
+	display: none;
+}
+
 .mouth-top-dot {
 	top: 68px;
 	left: 32px;
@@ -134,6 +138,220 @@ body {
 .face {
   height: 250px;
 }
+
+.face-man {
+  height: 250px;
+}
+
+.face-man .hair {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 121.00000000000001px;
+	height: 90px;
+	margin-left: -60.5px;
+	margin-top: -40.5px;
+	background: #e8cf1b;
+	border-radius: 220px 220px 0 0
+}
+.face-man .hair:before {
+	content: '';
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	height: 40px;
+	width: 90px;
+	background: #e8cf1b;
+	-webkit-border-radius: 50% 70% 0 70%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50% 70% 0 70%;
+	-moz-background-clip: padding;
+	border-radius: 50% 70% 0 70%;
+	background-clip: padding-box
+}
+.face-man header {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    margin-top: -55px;
+    margin-left: -55px;
+    background: #f9d7ac;
+    border-radius: 50% 30%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+.face-man header:before,
+.face-man header:after {
+	content: '';
+	z-index: 10000;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #255688;
+	background-image: -moz-radial-gradient(center center, cover, black 0, #0402e6 50%, #0B410B 100%);
+	background-image: -webkit-radial-gradient(center center, cover, black 0, #0402e6 50%, #0B410B 100%);
+	background-image: -o-radial-gradient(center center, cover, black 0, #0402e6 50%, #0B410B 100%);
+	background-image: radial-gradient(center center, cover, black 0, #0402e6 50%, #0B410B 100%);
+	-webkit-border-radius: 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50%;
+	-moz-background-clip: padding;
+	border-radius: 50%;
+	background-clip: padding-box;
+}
+.face-man header:before {
+	top: 28%;
+	left: 33%
+}
+.face-man header:after {
+	top: 57%;
+	right: 24%
+}
+.face-man .eyes {
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.face-man .eyes::before,
+.face-man .eyes::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 24px;
+	height: 15px;
+	background: white;
+	border-top: 4px solid black;
+}
+.face-man .eyes::before {
+	left: -39.285714285714285px;
+	border-left: 4px solid black;
+	-webkit-border-radius: 0 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 0 50%;
+	-moz-background-clip: padding;
+	border-radius: 0 50%;
+	background-clip: padding-box;
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+.face-man .eyes::after {
+	right: -39.285714285714285px;
+	-webkit-border-radius: 50% 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50% 0;
+	-moz-background-clip: padding;
+	border-radius: 50% 0;
+	background-clip: padding-box;
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+.face-man .nose {
+	position: absolute;
+	top: 45%;
+	left: 35%;
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	-webkit-border-radius: 0 0 50% 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 0 0 50% 50%;
+	-moz-background-clip: padding;
+	border-radius: 0 0 50% 50%;
+	background-clip: padding-box;
+	border-bottom: 4px solid #ddb889;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.face-man .nose::before,
+.face-man .nose::after {
+	content: '';
+	position: absolute;
+	top: -22px;
+	width: 30px;
+	height: 15px;
+	background: transparent;
+	border-top: 4px solid #4F2D0C;
+}
+.face-man .nose::before {
+	left: 22px;
+	-webkit-border-radius: 0 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 0 50%;
+	-moz-background-clip: padding;
+	border-radius: 0 50%;
+	background-clip: padding-box;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.face-man .nose::after {
+	right: 22px;
+	-webkit-border-radius: 50% 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50% 0;
+	-moz-background-clip: padding;
+	border-radius: 50% 0;
+	background-clip: padding-box;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .face .hair {
     position: absolute;
     top: 40%;
@@ -185,10 +403,10 @@ body {
     width: 15px;
     height: 15px;
     background: #255688;
-    background-image: -moz-radial-gradient(center center, cover, black 0, #0B410B 50%, #0B410B 100%);
-    background-image: -webkit-radial-gradient(center center, cover, black 0, #0B410B 50%, #0B410B 100%);
-    background-image: -o-radial-gradient(center center, cover, black 0, #0B410B 50%, #0B410B 100%);
-    background-image: radial-gradient(center center, cover, black 0, #0B410B 50%, #0B410B 100%);
+    background-image: -moz-radial-gradient(center center, cover, black 0, #5d8a5d 50%, #0B410B 100%);
+    background-image: -webkit-radial-gradient(center center, cover, black 0, #5d8a5d 50%, #0B410B 100%);
+    background-image: -o-radial-gradient(center center, cover, black 0, #5d8a5d 50%, #0B410B 100%);
+    background-image: radial-gradient(center center, cover, black 0, #5d8a5d 50%, #0B410B 100%);
     -webkit-border-radius: 50%;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 50%;
@@ -299,48 +517,56 @@ body {
     transform: rotate(-5deg)
 }
 .face .nose::after {
-    right: 22px;
-    -webkit-border-radius: 50% 0;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 50% 0;
-    -moz-background-clip: padding;
-    border-radius: 50% 0;
-    background-clip: padding-box;
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    transform: rotate(5deg)
+	right: 22px;
+	-webkit-border-radius: 50% 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50% 0;
+	-moz-background-clip: padding;
+	border-radius: 50% 0;
+	background-clip: padding-box;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+.face-man .mouth-top {
+	position: absolute;
+	top: 72px;
+	left: 20px;
+	width: 24px;
+	height: 13px;
+	background: red;
+	transform: rotate(45deg);
+	-webkit-border-radius: 50% 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50% 0;
+	-moz-background-clip: padding;
+	border-radius: 50%;
+}
+
+.face-man .mouth-bottom {
+	background: red;
 }
 
 .mouth-top {
-  position: absolute;
-    top: 72px;
-    left: 20px;
-    width: 24px;
-    height: 13px;
-    background: #f26d7d;
-    transform: rotate(45deg);
-    -webkit-border-radius: 50% 0;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 50% 0;
-    -moz-background-clip: padding;
-    border-radius: 50%;
+	background: #f26d7d;
 }
 
 .mouth-bottom {
-    position: absolute;
-    top: 73px;
-    left: 17px;
-    width: 24px;
-    height: 16px;
-    background: #f26d7d;
-    transform: rotate(45deg);
-    -webkit-border-radius: 50%;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 50%;
-    -moz-background-clip: padding;
-    border-radius: 50%;
+	position: absolute;
+	top: 73px;
+	left: 17px;
+	width: 24px;
+	height: 16px;
+	background: #f26d7d;
+	transform: rotate(45deg);
+	-webkit-border-radius: 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50%;
+	-moz-background-clip: padding;
+	border-radius: 50%;
 }
 
 @keyframes top-animation {
