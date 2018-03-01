@@ -1,5 +1,16 @@
-Translatr
+pau1fitz.github.io
 ---
-[Check out the demo here!.](https://pau1fitz.github.io/translatr/)
 
-![Alt text](/photo-translatr.jpg?raw=true "Optional Title")
+[Homepage.](https://pau1fitz.github.io/)
+
+[react-spotify.](https://pau1fitz.github.io/react-spotify/)
+
+[react-slidez.](https://pau1fitz.github.io/react-slidez/)
+
+[Bitcoin.](https://pau1fitz.github.io/bitcoin/)
+
+[Translatr.](https://pau1fitz.github.io/translatr/)
+
+[Pinpad.](https://pau1fitz.github.io/pinpad/)
+
+
