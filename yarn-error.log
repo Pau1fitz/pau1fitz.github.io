@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/bin/node /Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/bin/yarn build
+
+PATH: 
+  /Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  6.11.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "/Users/fitzgeraldpaul/Desktop/pau1fitz.github.io"
+      at MessageError.Error (native)
+      at new MessageError (/Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/lib/node_modules/yarn/lib/cli.js:40048:15
+      at next (native)
+      at step (/Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /Users/fitzgeraldpaul/.nvm/versions/node/v6.11.1/lib/node_modules/yarn/lib/cli.js:109:13
