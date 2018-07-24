@@ -50,14 +50,14 @@ body {
 .fa-github {
 	font-size: 28px;
 	color: #000;
-	margin-top: 15px;
 	margin-right: 5px;
 }
 
 .fa-stack-overflow {
 	font-size: 28px;
-	margin-top: 15px;
 	color: #f37b24;
+	position: relative;
+	top: -2px;
 }
 
 a {
