@@ -60,6 +60,15 @@ body {
 	top: -2px;
 }
 
+.fa-envelope {
+    margin-left: 6px;
+    font-size: 22px;
+    color: #000;
+    position: relative;
+    top: -2px;
+}
+
+
 a {
 	text-decoration: none;
 }
