@@ -31,10 +31,11 @@ h1 {
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 30px;
   line-height: 1.5;
   color: #d6d7e3;
+  letter-spacing: 1px;
 }
 
 .images {
