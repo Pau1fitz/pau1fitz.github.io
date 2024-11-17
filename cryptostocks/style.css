@@ -1,0 +1,57 @@
+/* Reset styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #695f8f 35%, #3d68a5);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero {
+  max-width: 800px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  font-weight: 800;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #d6d7e3;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.device {
+  max-width: 200px;
+}
+
+.download {
+  margin-top: 20px;
+}
+
+.icon {
+  width: 200px;
+}
