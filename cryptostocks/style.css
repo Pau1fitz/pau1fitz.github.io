@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   overflow: hidden;
 }
@@ -40,18 +40,75 @@ h1 {
 .images {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 40px;
 }
 
 .device {
   max-width: 200px;
+  width: 100%;
 }
 
 .download {
   margin-top: 20px;
 }
 
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
 .icon {
   width: 200px;
+  max-width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .device {
+    max-width: 150px;
+  }
+
+  .download-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .device {
+    max-width: 120px;
+  }
+
+  .download-button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
 }
